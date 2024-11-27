@@ -1,0 +1,96 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  width: 450px;
+  height: 100%;
+  overflow-y: hidden; /* Prevent body scroll, only allow internal scroll */
+  background-color: #f4f4f9;
+}
+
+/* Header container styling (Title and Button) */
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Header Title styling */
+h1 {
+  font-size: 24px;
+  text-align: left;
+  color: #333;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Clear Button styling */
+#clear-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#clear-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Container styling for the table */
+#container {
+  overflow-y: auto;
+  height: calc(100% - 80px); /* Subtract space for the header */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  position: sticky;
+  top: 0; /* Keeps the table header sticky */
+  z-index: 1; /* Ensures header stays above table content */
+}
+
+/* Row styling for the URL list */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Status color-coding */
+.status-next {
+  color: green;
+}
+
+.status-back {
+  color: red;
+}
+
+.status-same {
+  color: gray;
+}
+
+.status-initial {
+  color: blue;
+}
